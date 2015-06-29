@@ -1,0 +1,19 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <f:entry field="links" title="${%Links}">
+        <f:repeatable field="links" add="${%Add Link}">
+            <table width="100%">
+                <br/>
+                <!--<f:entry title="${%Note to push}"    field="noteMsg" >
+                    <f:textarea checkUrl="'descriptorByName/GitPublisher/checkNoteMsg?value='+escape(this.value)" />
+                </f:entry>-->
+                <f:entry field="name">
+                    <f:textbox/>
+                </f:entry>
+            </table>
+            <div align="right">
+                <f:repeatableDeleteButton/>
+            </div>
+        </f:repeatable>
+    </f:entry>
+</j:jelly>

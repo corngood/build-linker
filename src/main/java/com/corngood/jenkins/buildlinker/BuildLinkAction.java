@@ -7,7 +7,7 @@ import org.kohsuke.stapler.export.Exported;
 @ExportedBean
 public class BuildLinkAction implements Action {
     @Exported
-    public String something = "foo";
+    public String[] links = {};
 
     public String getIconFileName() {
         return null;
